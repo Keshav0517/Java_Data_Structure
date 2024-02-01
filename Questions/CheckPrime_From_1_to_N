@@ -1,0 +1,37 @@
+public class CheckPrime_From_1_to_N {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter range:");
+        int range=sc.nextInt();
+        CheckPrime_From_1_to_N.rangeOfPrime(range);
+    }
+
+    public static void rangeOfPrime(int range){
+        for (int i=1;i<=range;i++){
+            if(isPrime(i)){
+                System.out.println(i+" ");
+            }
+        }
+    }
+    public static boolean isPrime(int num){
+        int div=0;
+        if(num==0 || num==1){
+            return false;
+        }
+
+        if(n==2){
+            return true;
+        }
+
+        for (int i=2;i<=num/2;i++){
+            if (num%i==0){
+                div++;
+            }
+
+        }
+        if (div==0){
+            return true;
+        }
+        return false;
+    }
+}
