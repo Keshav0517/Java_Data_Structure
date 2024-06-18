@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 //Remove Duplicate From Array using Two Pointers
 //https://leetcode.com/problems/remove-duplicates-from-sorted-array/submissions/1292296123/
-
+//Tc-O(n) Sc-O(1)
 public class Remove_Duplicate {
     public static void main(String[] args) {
         int[] arr={1,1,2,2};
